@@ -5,10 +5,7 @@
 
 header {
     background-color: #091521;
-    width: 100%;
     height: 70px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .mobile-menu-button {

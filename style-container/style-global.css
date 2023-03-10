@@ -1,6 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
+/* FOR MOBILE */
+@media screen and (max-width: 500px) {
+    .desktop-navigation , .desktop-main-content {
+        display: none;
+    }
 }
 
 header {
@@ -35,31 +37,102 @@ header {
     margin: 10px 0;
 }
 
-.website-navigation {
-    font-family: sans-serif;
-    width: 50%;
+/*main {
+
+} */
+
+footer {
+    background-color: #12283d;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+footer > .socmed-links {
     height: 100%;
+    width: 100%;
+}
+
+footer > .socmed-links > ul {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 
-.website-navigation a {
-    text-decoration: none;
-    color: white;
+footer > .socmed-links > ul > li > a {
+    color:#e5e8eb;
 }
 
-.website-navigation a:hover {
-    color: white;
-    border: 2px solid gray;
-    padding: 10px;
-    transition-delay: 0.4s;
-    cursor: pointer;
-}
+/* FOR DESKTOP */
+@media screen and (min-width: 1024px) {
+    .mobile-menu-button , .mobile-main-content {
+        display: none;
+    }
 
+    .desktop-navigation {
+        font-family: sans-serif;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
     
-footer {
-    background-color: rgb(60, 80, 90);
-    width: 100%;
-    height: 50px;
+    .desktop-navigation > a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .desktop-navigation > a:hover {
+        color: white;
+        border: 2px solid gray;
+        padding: 10px;
+        transition-delay: 0.4s;
+        cursor: pointer;
+    }
+
+    /* Main */
+
+    footer {
+        background-color: #091521;
+        height: 60px;
+        width: 100%;
+    }
+
+    footer > .socmed-links {
+        height: 100%;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .socmed-links > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .socmed-links > ul > li > a {
+        text-decoration: none;
+        color:#e5e8eb;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    ul > li > a:hover {
+        border: 2px solid gray;
+        border-radius: 10%;
+        background-color: transparent;
+        color: white;
+        cursor: crosshair;
+        padding: 20px;
+    }
 }

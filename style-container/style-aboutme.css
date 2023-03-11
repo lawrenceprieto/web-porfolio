@@ -1,68 +1,95 @@
-
 main {
     background-color: #091521;
     color: white;
-    height: 1300px;
+    height: 1200px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .aboutme-content {
-    width: 70%;
     height: 80%;
-    display: flex;
-    flex-direction: column;
+    width: 70%;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.aboutme-content > h1 {
-    height: 10%;
-    width: 80%;
+article > h1 {
     font-family: 'Audiowide';
-    font-size: 40px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.aboutme-content > article {
-    width: 80%;
-    height: 75%;
-}
-
-article > h3 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    text-decoration: underline;
-}
-
-article > h4 {
-    font-family: sans-serif;
-    font-size: 22px;
-    margin: 20px 0;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-article p {
+article > h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+article h3 {
     font-family: sans-serif;
-    font-size: 20px;
 }
 
-article > ul {
-    list-style-type: none;
+article .hobbies p {
+    font-family: sans-serif;
 }
 
-article > ul > li > a {
-    color: rgb(187, 180, 180);
+.mobile-section a , .desktop-section a {
     text-decoration: none;
-    cursor: crosshair;
+    text-transform: uppercase;
+    color: rgb(187, 180, 180);
 }
 
-.aboutme-content > .link {
-    width: 80%;
-    height: 15%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+article > .hobbies {
+    margin-bottom: 50px;
+}
+
+article > a {
+    margin-top: 30px;
+}
+
+
+/* FOR MOBILE */
+@media screen and (max-width: 500px) {
+    
+    .desktop-section {
+        display: none;
+    }
+    main {
+        height: 950px;
+    }
+}
+
+/* FOR DESKTOP */
+@media screen and (min-width: 1024px) {
+
+    .mobile-section {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        height: 1000px;
+    }
+    article .hobbies p {
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+    .hobbies {
+        border-left: 3px solid grey;
+        padding-left: 30px;
+    }
+
+    .desktop-section > div {
+        margin-bottom: 50px;
+    }
+
+    article > h2 {
+        margin-top: 50px;
+    }
 }

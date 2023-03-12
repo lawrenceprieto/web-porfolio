@@ -1,91 +1,103 @@
 main {
     background-color: #091521;
+    color: white;
     height: 800px;
     width: 100%;
-    max-width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-content {
-    height: 70%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 80%;
+    width: 80%;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-article {
-    height: 15%;
-    width: 90%;
+.contact-content > article {
+    width: 100%;
 }
 
-article > h1 {
+.contact-content > article > h1 {
     font-family: 'Audiowide';
-    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
+.contact-content > article > p {
+    font-family: sans-serif;
+}
 
-form {
-    height: 65%;
-    width: 90%; 
+.contact-content > form {
+    width: 100%;
+    margin-bottom: 50px;   
     display: flex;
     flex-direction: column;
 }
 
-form > label {
+.contact-content > form > label {
     font-family: sans-serif;
-    font-size: 16px;
 }
 
-form > input {
+.contact-content > form > input {
     background-color: transparent;
     color: rgb(151, 151, 151);
     border: 1px solid rgb(102, 100, 100);
     border-radius: 10px;
     font-size: 18px;
     margin: 10px 0;
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
 }
 
-form > textarea {
+.contact-content > form > textarea {
     background-color: transparent;
     color: rgb(151, 151, 151);
     border: 1px solid rgb(102, 100, 100);
     border-radius: 10px;
     margin: 10px 0;
-    width: 400px;
+    width: 100%;
 }
 
-form > button {
+.contact-content > form > button {
+    width: 100%;
     margin-top: 20px;
-    width: 400px;
 }
 
-.contact-link {
-    height: 10%;
-    width: 90%;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
+@media (min-width: 501px) and (max-width: 1023px) {
+    .desktop-navigation , .mobile-main-content footer {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 500px) {
+/* FOR DESKTOP */
+@media screen and (min-width: 1024px) {
+    .mobile-menu-button {
+        display: none;
+    }
+    
+    .contact-content form , input , textarea {
+        width: 70%;
+    }
 
-    form > input , form > textarea , form > button {
-        width: 300px;
+    .contact-content > form > button {
+        width: 50%;
+        height: 50px;
+    }
+    .contact-content > article {
+        margin-bottom: 30px;
     }
 
     .contact-content {
-        margin-left: 20px;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
+        height: 100%;
+        width: 70%;
     }
-    
-    
+
+    .contact-content label {
+        font-size: 19px;
+    }
+
+    .contact-content p {
+        font-size: 17px;
+    }
+
 }

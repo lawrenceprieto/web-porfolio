@@ -1,12 +1,11 @@
 main {
     background-color: #091521;
     color: white;
-    height: 1200px;
+    height: 1000px;
     width: 100%;
 }
 
 .aboutme-content {
-    height: 80%;
     width: 70%;
     padding-top: 80px;
     margin-left: auto;
@@ -15,7 +14,7 @@ main {
 
 article > h1 {
     font-family: 'Audiowide';
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -54,8 +53,9 @@ article > a {
     .desktop-section {
         display: none;
     }
-    main {
-        height: 950px;
+
+    .aboutme-content {
+        width: 80%;
     }
 }
 
@@ -67,9 +67,7 @@ article > a {
     }
 
     main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 1100px;
     }
 
     article {
@@ -91,5 +89,11 @@ article > a {
 
     article > h2 {
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1023px) {
+    .desktop-navigation , .mobile-main-content footer , .desktop-section {
+        display: none;
     }
 }

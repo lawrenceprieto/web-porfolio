@@ -335,7 +335,7 @@ footer > .socmed-links > ul > li > a {
     }
 
     /*FOR MODAL */
-    #modalSample .modal-content {
+    .modal .modal-content {
         background-color: #091521;
         color: white;
     }

@@ -333,4 +333,32 @@ footer > .socmed-links > ul > li > a {
         cursor: crosshair;
         padding: 20px;
     }
+
+    /*FOR MODAL */
+    #modalSample .modal-content {
+        background-color: #091521;
+        color: white;
+    }
+    
+    .modal-header > h1 {
+        font-family: 'Audiowide';
+        font-size: 40px;
+    }
+
+    .modal-content > .modal-body {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-body img {
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .modal-image {
+        height: 300px;
+        width: 400px;
+        object-fit: fill;
+    }
 }

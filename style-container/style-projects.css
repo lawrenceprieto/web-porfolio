@@ -2,6 +2,13 @@ main {
     background-color: #091521;
 }
 
+.main-content {
+    width: 70%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pb-2 {
     font-family: 'Audiowide';
     letter-spacing: 0.2em;

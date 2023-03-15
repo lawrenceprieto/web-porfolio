@@ -113,6 +113,10 @@ main {
     .desktop-navigation , .desktop-main-content , .desktop-view {
         display: none;
     }
+    .main-content {
+        width: 90%;
+    }
+    
 }
 
 @media (min-width: 501px) and (max-width: 1023px) {

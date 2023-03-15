@@ -2,6 +2,12 @@ main {
     background-color: #091521;
 }
 
+.pb-2 {
+    font-family: 'Audiowide';
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+}
 
 .mobile-main-content {
     background-color: #091521;

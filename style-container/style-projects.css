@@ -1,7 +1,5 @@
 main {
     background-color: #091521;
-    height: 1800px;
-    width: 100%;
 }
 
 
@@ -99,58 +97,21 @@ main {
 
 /* FOR MOBILE */
 @media screen and (max-width: 500px) {
-    .desktop-navigation , .desktop-main-content {
+    .desktop-navigation , .desktop-main-content , .desktop-view {
         display: none;
     }
 }
 
 @media (min-width: 501px) and (max-width: 1023px) {
-    .desktop-navigation , .mobile-menu-button , .desktop-main-content , .mobile-main-content {
+    .desktop-navigation , .desktop-main-content , .mobile-main-content , .desktop-view {
         display: none;
     }
 }
 
 /* FOR DESKTOP */
 @media screen and (min-width: 1024px) {
-    .mobile-menu-button , .mobile-main-content {
+    .mobile-menu-button , .mobile-main-content , .mobile-view {
         display: none;
-    }
-
-    footer {
-        background-color: #091521;
-        height: 60px;
-        width: 100%;
-    }
-
-    footer > .socmed-links {
-        height: 100%;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .socmed-links > ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .socmed-links > ul > li > a {
-        text-decoration: none;
-        color:#e5e8eb;
-        height: 50px;
-        display: flex;
-        align-items: center;
-    }
-
-    ul > li > a:hover {
-        border: 2px solid gray;
-        border-radius: 10%;
-        background-color: transparent;
-        color: white;
-        cursor: crosshair;
-        padding: 20px;
     }
 
     /*FOR MODAL */

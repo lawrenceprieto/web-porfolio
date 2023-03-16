@@ -27,6 +27,12 @@ main {
     font-family: sans-serif;
 }
 
+span a {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .contact-content > form {
     width: 100%;
     margin-bottom: 50px;   

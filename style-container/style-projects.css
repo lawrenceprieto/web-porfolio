@@ -3,7 +3,7 @@ main {
 }
 
 .main-content {
-    width: 80%;
+    width: 75%;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -109,11 +109,6 @@ main {
 /* END OFFCANVAS STYLE */
 
 /* FOR MODAL STYLE */
-.modal-content {
-    width: 100%;
-    background-color: #091521;
-    color: white;
-}
 
 .modal-content .header {
     width: 80%;
@@ -124,12 +119,19 @@ main {
     justify-content: space-between;
 }
 
-.modal-content .header h1 {
+.modal-content > .header > h1 {
     font-family: 'Audiowide';
     text-transform: uppercase;
 }
 
+.modal-content .header i:hover {
+    color: blue;
+}
+
 .modal-content .main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
 }
@@ -139,14 +141,27 @@ main {
 }
 
 .modal-content .main .project-details {
-    width: 450px;
-    padding: 20px;
     background-color: #12283d;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.modal-content > .main h3 , p {         
+.modal-content .main .project-details h3 {
+    height: 15%;
+}
+
+.modal-content .main .project-details p {
+    width: 90%;
+    height: 50%;
     text-align: justify;      
-    margin-bottom: 50px;
+}
+
+.modal-content .main .project-details .text-stack {
+    height: 15%;
 }
 
 .modal-content .footer {

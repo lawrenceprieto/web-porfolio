@@ -1,77 +1,151 @@
 main {
     background-color: #091521;
-    color: white;
-    height: 800px;
-    width: 100%;
+    height: 700px;
+    padding-top: 50px;
 }
 
-.contact-content {
-    height: 80%;
+.contact-body {
+    display: flex;
     width: 80%;
-    padding-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
-.contact-content > article {
-    width: 100%;
+.form-content {
+    background-color: rgba(69, 98, 126, 0.322);
+    color: white;
+    width: 60%;
+    padding: 40px;
 }
 
-.contact-content > article > h1 {
-    font-family: 'Audiowide';
+.form-content h2 {
+    font-family: 'audiowide';
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
-.contact-content > article > p {
-    font-family: sans-serif;
-}
-
-span a {
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contact-content > form {
-    width: 100%;
-    margin-bottom: 50px;   
+.form-content form {
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
-.contact-content > form > label {
+.form-content form label {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.form-content form input {
+    background-color: #091521;
+    color: rgb(151, 151, 151);
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form-content form textarea {
+    background-color: #091521;
+    color: rgb(151, 151, 151);
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-content form button {
+    background-color: #091521;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 50%;
+    height: 30px;
+    color: white;
+}
+
+.form-content form button:hover {
+    background-color: white;
+    color: blue;
+}
+
+.contact-content {
+    background-color: #12283d;
+    color: #cbdfec;
+    width: 40%;
+    padding: 40px;
+}
+
+.contact-content h2 {
+    text-transform: uppercase;
     font-family: sans-serif;
 }
 
-.contact-content > form > input {
-    background-color: transparent;
-    color: rgb(151, 151, 151);
-    border: 1px solid rgb(102, 100, 100);
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 10px 0;
-    width: 100%;
-    height: 40px;
+.contact-content h5 {
+    color:rgb(151, 151, 151);
+    padding-top: 25px;
+    font-size: 15px;
 }
 
-.contact-content > form > textarea {
-    background-color: transparent;
-    color: rgb(151, 151, 151);
-    border: 1px solid rgb(102, 100, 100);
+.contact-content i {
+    padding: 5px;
+    background-color: #091521;
+    color: white;
     border-radius: 10px;
-    margin: 10px 0;
-    width: 100%;
 }
 
-.contact-content > form > button {
-    width: 100%;
-    margin-top: 20px;
+@media screen and (max-width: 500px) {
+    main {
+        height: 1100px;
+    }
+    .contact-desktop-view {
+        display: none;
+    }
+
+    .contact-body {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        width: 100%;
+    }
+
+    .form-content , .form-content form {
+        width: 100%;
+    }
+
+    .form-content {
+        border-bottom: 3px solid gray;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 1023px) {
-    .desktop-navigation , .mobile-main-content footer {
+    .desktop-navigation , .mobile-main-content footer , .contact-desktop-view  {
         display: none;
+    }
+
+    main {
+        height: 1100px;
+    }
+    .contact-desktop-view {
+        display: none;
+    }
+
+    .contact-body {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .contact-content {
+        width: 100%;
+    }
+
+    .form-content , .form-content form {
+        width: 100%;
+    }
+
+    .form-content {
+        border-bottom: 2px solid gray;
     }
 }
 
@@ -80,30 +154,8 @@ span a {
     .mobile-menu-button {
         display: none;
     }
-    
-    .contact-content form , input , textarea {
-        width: 70%;
-    }
 
-    .contact-content > form > button {
-        width: 50%;
-        height: 50px;
+    .form-content {
+        border-right: 3px solid gray;
     }
-    .contact-content > article {
-        margin-bottom: 30px;
-    }
-
-    .contact-content {
-        height: 100%;
-        width: 70%;
-    }
-
-    .contact-content label {
-        font-size: 19px;
-    }
-
-    .contact-content p {
-        font-size: 17px;
-    }
-
 }

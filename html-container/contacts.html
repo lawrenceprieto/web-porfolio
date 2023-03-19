@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <title>Index Page</title>
+        <title>Contact Page</title>
         <!-- EXTERNAL STYLE -->
         <link rel="stylesheet" href="../style-container/style-global.css">
         <link rel="stylesheet" href="../style-container/style-contacts.css">
@@ -23,7 +23,7 @@
         <header>
             <!-- MOBILE VIEW-->
             <div class="mobile-menu-button">
-                <a  class="btn btn-primary" 
+                <a class="btn btn-primary" 
                 data-bs-toggle="collapse" 
                 href="#menu"> <i class="fa-solid fa-bars"></i></a>
             </div>
@@ -49,26 +49,31 @@
             </section>
             <!-- END -->
 
-            <section class="contact-content">
-                
-                <article>
-                    <h1>Contacts</h1>
-                    <p>Reach out me via contact page or you can directly email me here 
-                        <span><a href="mailto:keithprietolawrence@gmail.com" target="_blank">keithprietolawrence@gmail.com</a></span>
-                    </p>
-                </article>
-                
-                <form action="#">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" cols="33" required></textarea>
-                    <button type="submit" class="btn btn-outline-light border border-secondary">Send Message</button>
-                </form>
-
-            </section>
+            <div class="contact-body">
+                <div class="form-content">
+                    <h2>Get in Touch</h2>
+                    <p>feel free to drop me a message</p>
+                    <hr style="border: 2px solid gray">
+                    <form action="#">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" cols="33" required></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-content">
+                    <h2>Contact Information</h2>
+                    <p>you can directly message me here</p>
+                    <hr style="border: 2px solid gray">
+                    <h5><i class="fa-solid fa-envelope"></i> &nbsp keithprietolawrence@gmail.com</h5>
+                    <h5><i class="fa-solid fa-phone"></i> &nbsp 09052263972</h5>
+                    <h5><i class="fa-brands fa-viber"></i> &nbsp viber</h5>
+                    <h5><i class="fa-brands fa-telegram"></i> &nbsp telegram</h5>
+                </div>
+            </div>
         </main>
         <footer>
             <section class="socmed-links">

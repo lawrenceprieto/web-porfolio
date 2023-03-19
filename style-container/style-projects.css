@@ -3,13 +3,28 @@ main {
 }
 
 .main-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
     width: 75%;
-    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.pb-2 {
+.project-navigation {
+    padding-top: 30px;
+}
+
+.project-navigation a {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #12283d;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.main-content h1 {
     font-family: 'Audiowide';
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -193,6 +208,10 @@ main {
     .main-content {
         width: 90%;
     }
+
+    .project-navigation {
+        width: 100%;
+    }
     
 }
 
@@ -200,6 +219,7 @@ main {
     .desktop-navigation , .desktop-main-content , .mobile-main-content , .desktop-view {
         display: none;
     }
+
 }
 
 /* FOR DESKTOP */
@@ -207,4 +227,5 @@ main {
     .mobile-menu-button , .mobile-main-content , .mobile-view {
         display: none;
     }
+    
 }

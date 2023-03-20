@@ -106,7 +106,7 @@ main {
         flex-direction: column;
     }
     
-    .contact-content {
+    .contact-content , .form-content form button {
         width: 100%;
     }
 
@@ -116,6 +116,7 @@ main {
 
     .form-content {
         border-bottom: 3px solid gray;
+        padding: 25px 15px;
     }
 }
 

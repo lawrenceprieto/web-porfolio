@@ -1,6 +1,8 @@
 /* FOR MOBILE */
 @media screen and (max-width: 500px) {
-    .desktop-navigation , .desktop-main-content {
+
+    .desktop-navigation,
+    .desktop-main-content {
         display: none;
     }
 }
@@ -31,7 +33,7 @@ header {
     align-items: center;
 }
 
-.mobile-menu-content > a {
+.mobile-menu-content>a {
     text-decoration: none;
     color: white;
     margin: 10px 0;
@@ -44,19 +46,19 @@ header {
 footer {
     background-color: #12283d;
     color: white;
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
     height: 40px;
 }
 
-footer > .socmed-links {
+footer>.socmed-links {
     height: 100%;
     width: 100%;
 }
 
-footer > .socmed-links > ul {
+footer>.socmed-links>ul {
     list-style-type: none;
     height: 100%;
     width: 100%;
@@ -65,13 +67,15 @@ footer > .socmed-links > ul {
     align-items: center;
 }
 
-footer > .socmed-links > ul > li > a {
-    color:#e5e8eb;
+footer>.socmed-links>ul>li>a {
+    color: #e5e8eb;
 }
 
 /* FOR DESKTOP */
 @media screen and (min-width: 1024px) {
-    .mobile-menu-button , .mobile-main-content {
+
+    .mobile-menu-button,
+    .mobile-main-content {
         display: none;
     }
 
@@ -83,18 +87,19 @@ footer > .socmed-links > ul > li > a {
         justify-content: space-around;
         align-items: flex-end;
     }
-    
-    .desktop-navigation > a {
+
+    .desktop-navigation>a {
         text-decoration: none;
-        color: white;
-    }
-    
-    .desktop-navigation > a:hover {
-        color: white;
-        border: 2px solid gray;
-        padding: 10px;
-        transition-delay: 0.4s;
         cursor: pointer;
+        color: white;
+        transition: 0.8s;
+    }
+
+    .desktop-navigation>a:hover {
+        color: white;
+        padding: 10px;
+        border: 2px solid gainsboro;
+        transform: scale(1.05);
     }
 
     /* Main */
@@ -105,29 +110,29 @@ footer > .socmed-links > ul > li > a {
         width: 100%;
     }
 
-    footer > .socmed-links {
+    footer>.socmed-links {
         height: 100%;
         width: 30%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .socmed-links > ul {
+    .socmed-links>ul {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .socmed-links > ul > li > a {
+    .socmed-links>ul>li>a {
         text-decoration: none;
-        color:#e5e8eb;
+        color: #e5e8eb;
         height: 50px;
         display: flex;
         align-items: center;
     }
 
-    ul > li > a:hover {
+    ul>li>a:hover {
         border: 2px solid gray;
         border-radius: 10%;
         background-color: transparent;

@@ -1,8 +1,17 @@
+* {
+    font-family: "Mulish", sans-serif;
+}
+
+.main-body {
+    background-color: #091521;
+}
+
 main {
     background-color: #091521;
     color: white;
+    min-height: 100vh;
     width: 100%;
-    height: 600px;
+    font-family: "Mulish", sans-serif;
 }
 
 .main-content {
@@ -13,20 +22,29 @@ main {
     margin-right: auto;
 }
 
-article > h1 {
+.main-content .layout .myimage {
+    transition: 0.8s;
+    object-fit: cover;
+}
+
+.main-content .layout .myimage:hover {
+    transform: scale(1.05);
+}
+
+article>h1 {
     font-family: 'Audiowide';
     letter-spacing: 0.2em;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-article > h2 {
+article>h2 {
     font-family: 'Audiowide';
     letter-spacing: 0.4em;
     margin-bottom: 20px;
 }
 
-article > p {
+article>p {
     font-family: sans-serif;
     color: rgb(207, 202, 202);
     font-size: 18px;
@@ -34,7 +52,7 @@ article > p {
     margin-bottom: 40px;
 }
 
-article > p > a {
+article>p>a {
     text-decoration: none;
     color: white;
     border: 1px solid grey;
@@ -42,22 +60,35 @@ article > p > a {
     padding: 5px 10px;
 }
 
-article > p > a:hover {
+article>p>a:hover {
     background-color: white;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
 }
 
 /* FOR MOBILE */
 @media screen and (max-width: 500px) {
-    .desktop-navigation , .desktop-main-content {
+
+    .desktop-navigation,
+    .desktop-main-content {
         display: none;
     }
 
-    article > p > a {
+    article>p>a {
         padding: 2px 6px;
     }
 
     article h1 {
         width: 100%;
+    }
+
+    .layout {
+        display: flex;
+        gap: 30px;
+        flex-direction: column-reverse;
     }
 
 }
@@ -67,19 +98,21 @@ article > p > a:hover {
     .mobile-menu-button {
         display: none;
     }
-    
+
     .main-content {
         width: 70%;
         padding-top: 120px;
     }
 
-    article > p {
+    article>p {
         width: 60%;
-    }    
+    }
 }
 
 @media (min-width: 501px) and (max-width: 1023px) {
-    .desktop-navigation , .mobile-main-content footer {
+
+    .desktop-navigation,
+    .mobile-main-content footer {
         display: none;
     }
 }

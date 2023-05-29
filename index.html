@@ -1,246 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Index Page</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="style-container/style-global.css">
-    <link rel="stylesheet" href="style-container/style-index.css">
-    <link rel="stylesheet" href="style-container/style-projects.css">
-    <link rel="stylesheet" href="style-container/style-contacts.css">
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <!-- EXTERNAL STYLE -->
+    <link rel="stylesheet" href="./css/style-global.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <!-- For BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .hidden {
-            display: none;
-        }
-        
-        .bg {
-            background-color: #091521;
-        }
-    </style>
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg">
-    
+<body class="main-body">
     <header>
-        <div class="desktop-navigation">
-            <a href="#home" onclick="navigate('home')">Home</a>
-            <!-- <a href="#about" onclick="navigate('home')">About</a> -->
-            <a href="#project" onclick="navigate('project')">Project</a>
-            <a href="#contact" onclick="navigate('contact')">Contact</a>
+        <!-- MOBILE VIEW -->
+        <div class="mobile-menu-button">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#menu"> <i class="fa-solid fa-bars"></i></a>
         </div>
-    </header>
-    
-    <main>
+        <!-- END -->
 
-        <div id="home" class="page">
-            <section class="main-content">
+        <!-- DESKTOP VIEW -->
+        <section class="desktop-navigation">
+            <a href="index.html">HOME</a>
+            <a href="./html/aboutme.html">ABOUTE ME</a>
+            <a href="./html/projects.html">PROJECTS</a>
+            <a href="./html/contacts.html">CONTACTS</a>
+        </section>
+        <!-- END -->
+    </header>
+
+    <main>
+        <!-- MOBILE MENU-BUTTON CONTENT-->
+        <section class="collapse" id="menu">
+            <div class="mobile-menu-content">
+                <a href="./index.html">HOME</a>
+                <a href="./html/aboutme.html">ABOUT ME</a>
+                <a href="./html/projects.html">PROJECTS</a>
+                <a href="./html/contacts.html">CONTACTS</a>
+            </div>
+        </section>
+        <!-- END -->
+
+        <h1 id="date"></h1>
+        <section class="main-content">
+            <div class="layout">
                 <article>
-                    <h1>Hello</h1> 
+                    <h1>Hello</h1>
                     <h1>I'm Lawrence</h1>
                     <h1>WEB DEVELOPER</h1>
-                    <p>Learning Front and Back End Development is my main goal, to make many projects in 
-                    the future as if i had a magic on my hands to make things happen on the internet. </p>
-                    <p>Reach out to me via my <a href="./html-container/contacts.html">contact page</a> . <a href="https://drive.google.com/file/d/18KntX0c2iAPK-gapQcdy1DS6-RMjAXNw/view?usp=share_link" target="_blank">view</a> or <a href="">download</a> the resume</p>
+                    <!-- <p>Learning Front and Back End Development is my main goal, to make many projects in
+                        the future as if i had a magic on my hands to make things happen on the internet. </p> -->
+                    <p>Reach out to me via my <a href="./html-container/contacts.html">contact page</a> . <a
+                            href="https://drive.google.com/file/d/18KntX0c2iAPK-gapQcdy1DS6-RMjAXNw/view?usp=share_link"
+                            target="_blank">view</a> or <a href="">download</a> the resume</p>
                 </article>
-            </section>
-        </div>
-
-        <div id="project" class="page hidden">
-            <div class="main-content">
-                <div class="container" id="custom-cards">
-                    <h1>Projects</h1>
-                    <div class="project-navigation">
-                        <a href="">All Projects</a>
-                        <a href="">KodeGo Activity</a>
-                        <a href="">Personal Practice</a>
-                    </div>
-                    <hr style="border: 2px solid white;">
-
-                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(image-container/kodego-activity-ecom.gif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto p-2 rounded-2">
-                                            <h4></h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectOne">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalOne">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url(image-container/kodego-activity_foodblog.gif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <h4></h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectTwo">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary desktop-view" data-bs-toggle="modal" data-bs-target="#modalTwo">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url(image-container/samplepicture.jfif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <h4>Project title</h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectThree">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary desktop-view" data-bs-toggle="modal" data-bs-target="#modalThree">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url(image-container/samplepicture.jfif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <h4>Project title</h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectThree">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary desktop-view" data-bs-toggle="modal" data-bs-target="#modalThree">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url(image-container/samplepicture.jfif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <h4>Project title</h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectThree">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary desktop-view" data-bs-toggle="modal" data-bs-target="#modalThree">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url(image-container/samplepicture.jfif);">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <div class="project-title"><h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3></div>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <h4>Project title</h4>
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <div class="mobile-view"><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" href="#projectThree">view</button></div>
-                                            <div class="desktop-view"><button type="button" class="btn btn-primary desktop-view" data-bs-toggle="modal" data-bs-target="#modalThree">view</button></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div>
+                <div class="myimage">
+                    <img src="./src/1.jpg" width="400" height="400">
                 </div>
             </div>
-        </div>
-
-        <div id="contact" class="page hidden">
-            <div class="contact-body">
-                <div class="form-content">
-                    <h2>Get in Touch</h2>
-                    <p>feel free to drop me a message</p>
-                    <hr style="border: 2px solid gray">
-                    <form action="#">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" cols="33" required></textarea>
-                        <button type="submit">SEND</button>
-                    </form>
-                </div>
-                <div class="contact-content">
-                    <h2>Contact Information</h2>
-                    <p>you can directly message me here</p>
-                    <hr style="border: 2px solid gray">
-                    <h5><i class="fa-solid fa-envelope"></i> &nbsp keithprietolawrence@gmail.com</h5>
-                    <h5><i class="fa-solid fa-phone"></i> &nbsp 09052263972</h5>
-                    <h5><i class="fa-brands fa-viber"></i> &nbsp viber</h5>
-                    <h5><i class="fa-brands fa-telegram"></i> &nbsp telegram</h5>
-                </div>
-            </div>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="index.js"></script>
+        </section>
+        <!-- <iframe src="https://drive.google.com/file/d/18KntX0c2iAPK-gapQcdy1DS6-RMjAXNw/preview" width="640" height="480"
+            allow="autoplay"></iframe> -->
 
     </main>
+
     <footer>
         <section class="socmed-links">
             <ul>
-                <li><a href="https://www.facebook.com/lawrenxceprieto" target="_blank"><i class="fa-lg fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/lawrennxxe" target="_blank"><i class="fa-lg fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://twitter.com/KlawrencePrt" target="_blank"><i class="fa-lg fa-brands fa-square-twitter"></i></a></li>
-                <li><a href="https://github.com/zsaries" target="_blank"><i class="fa-lg fa-brands fa-square-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lawrenxce/" target="_blank"><i class="fa-lg fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/lawrenxceprieto" target="_blank"><i
+                            class="fa-lg fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://github.com/zsaries" target="_blank"><i
+                            class="fa-lg fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lawrenxce/" target="_blank"><i
+                            class="fa-lg fa-brands fa-linkedin"></i></a></li>
             </ul>
         </section>
     </footer>
 
-
-    <!-- <div class="index-body">
-        <h1 id="greet" class="greet"></h1>
-        <p>Welcome to my Website</p>
-        <label for="name">NAME</label>
-        <input type="text" id="name">
-        <button>EXPLORE</button>
-
-        <p id="name"></p>
-    </div>
-
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const greetings = document.getElementById('greet')
-        console.log(greetings);
-            
-            let time;
-            time = new Date().getHours();
+        // const d = new Date();
+        // let hour = d.getHours();
+        // let minutes = d.getMinutes();
+        // let seconds = d.getSeconds();
+        // let currentHours = hour + "-" + minutes + "-" + seconds;
 
-            if (time > 0 && time < 12)  {
-                document.getElementById("greet").innerHTML = "Good Morning";
-            } else if (time >= 12 && time < 18) {
-                document.getElementById("greet").innerHTML = "Good Afternoon";
-            } else if (time >= 18 && time < 24) {
-                document.getElementById("greet").innerHTML = "Good Evening";
-            }
+        // const date = document.getElementById('date');
+        // date.textContent = currentHours;
 
-    </script> -->
+        // function display_ct5() {
+        //     var x = new Date()
+        //     var ampm = x.getHours() >= 12 ? ' PM' : ' AM';
+        //     let month = x.getMonth();
+        //     let updatedMonth = [];
+        //     if (month === '5') {
+        //         updatedMonth.push("May");
+        //     }
+
+        //     var x1 = updatedMonth + 1 + "/" + x.getDate() + "/" + x.getFullYear();
+        //     x1 = x1 + " - " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds() + ":" + ampm;
+        //     document.getElementById('date').innerHTML = x1;
+        //     display_c5();
+        // }
+        // function display_c5() {
+        //     var refresh = 1000; // Refresh rate in milli seconds
+        //     mytime = setTimeout('display_ct5()', refresh)
+        // }
+        // display_c5()
+    </script>
+    </script>
 </body>
+
 </html>
